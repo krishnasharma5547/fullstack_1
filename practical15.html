@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript1</title>
+    <style>
+        .incrementer
+        {
+            display: inline;
+            font-size: larger;
+            width: 50px;
+            height: 50px;
+            font-size: 30px;
+            background-color: yellow;
+
+        }
+        .decrementer
+        {
+            display: inline;
+            font-size: larger;
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+            font-size: 30px;
+            margin-left: 15cm;
+            
+            
+
+        }
+        
+        h1
+        {
+            color: white;
+            margin-left: 14cm;
+            margin-top: 2cm;
+            font-size: 300%;
+        }
+        body
+        {
+                background-color: gray;
+        }
+        h6{
+            display: inline;
+            margin-left: 50px;
+            margin-right: 50px;
+            color:yellow ;
+            font-size: 50px;
+        }
+        .incrementer:hover,.decrementer:hover
+        {
+            background-color: brown;
+        }
+    </style>
+</head>
+<body> 
+    <h1>COUNTER</h1>
+    
+    <button class="decrementer" onclick="decrement()" >-</button>
+    <h6 id="id01">0</h6>
+    <button class="incrementer" onclick="increment()">+</button>
+    <script>
+        var c=0;
+        var inc=document.getElementsByClassName("incrementer");
+        var dec=document.getElementsByClassName("decrementer");
+        
+        function increment()
+        {
+            c=c+1;
+            document.getElementById("id01").innerHTML=c;
+            
+            
+        }
+        function decrement()
+        {
+            c=c-1;
+            document.getElementById("id01").innerHTML=c;
+            
+        }
+
+
+    </script>
+   
+    
+    
+    
+</body>
+</html>
